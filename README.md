@@ -13,7 +13,7 @@ We will ask the user to provide a series of inputs. Each input will need to have
 |---|---|---|---|
 | Sleep Duration | Average hours of daily sleep over the past week | Integer | 0 - 24 |
 | Stress Level | Current level of stress experienced | Integer | 1 - 10 (1 = Very Low, 10 = Very High) |
-| Focus Level | Ability to concentrate on tasks and studies | Integer | 1 - 5 (1 = Very Poor, 5 = Excellent) | 
+| Focus Level | Ability to concentrate on tasks and studies | Integer | 1 - 10 (1 = Very Poor, 10 = Excellent) | 
 | Academic Workload | Overall academic workload from coursework | Integer | 1 - 10 (1 = Light, 10 = Very Heavy) |
 | Mood for the Day | Current emotional state of the student | String | Motivated, Calm, Anxious, Sad, Exhausted |
 | Social Activity Level | Frequency of social interaction and engagement | Integer | 1 - 10 (1 = Isolated, 10 = Very Social) |
@@ -40,7 +40,7 @@ We will create rules by combining user inputs and AI-generated outputs to identi
 | High Burnout Warning (Sleep) | Sleep Duration | Burnout Risk Score | Burnout Risk Score > 75 AND Sleep Duration < 6 |
 | Burnout Warning (Workload) | Academic Workload | Burnout Risk Score | Burnout Risk Score > 60 AND Academic Workload ≥ 7 |
 | Social Withdrawal Risk | Social Activity Level | Sentiment Analysis | Social Activity Level ≤ 3 AND Sentiment = “Negative” |
-| Cognitive Fatigue Risk | Focus Level | Sentiment Analysis | Focus Level ≤ 2 AND Sentiment = “Negative” |
+| Cognitive Fatigue Risk | Focus Level | Sentiment Analysis | Focus Level ≤ 4 AND Sentiment = “Negative” |
 | Counselling Recommendation | Social Activity Level, Focus Level | Crisis Alert | Crisis Alert = True OR Mental Wellness Risk Tier = “High” OR two or more warning rules are triggered |
 
 #### Sample Output Report to User: <br>
