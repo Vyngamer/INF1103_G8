@@ -54,4 +54,4 @@ Recommendation: Prioritise sleep and manage assignment deadlines with a study pl
 
 ### Repository information
 The link to the repository can be found here:
-https://github.com/Vyngamer/INF1103_G8
+https://github.com/Vyngamer/26-INF1103-P4-8
