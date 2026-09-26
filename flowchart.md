@@ -1,11 +1,19 @@
+
 ```mermaid
+---
+title: Prompting for survey
+---
+
 sequenceDiagram
 autonumber
+
+
 actor user as User
 participant io as I/O
 participant log as Logic
 participant ai as AI
 participant storage as Storage
+
 io-->>user:prompt survey
 user->>io:survey response
 io->>storage:store survey response
@@ -16,6 +24,26 @@ storage->>ai:user information
 ai->>ai:build prompt
 ai->>log:response
 log->>io:parsed response
-io->>user:response to survey and start of chat
+io->>user:response to survey 
+io-->>user:start of chat
+```
+
+
+
+```mermaid
+---
+title: Reflection chat
+---
+
+sequenceDiagram
+autonumber
+
+actor user as User
+participant io as I/O
+participant log as Logic
+participant ai as AI
+
+io-->>user:start of chat
+user->>io:response to chatbot
 
 ```
